@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav.css">
+    <title>Nav Bar</title>
+</head>
+<body>
+        <div id="mySidepanel" class="sidepanel">
+            <div class="box-container">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <ul>
+                       <li> <a href="sdmc">NipOutward</a></li>
+                    </ul>
+                <ul>
+                    <li><a href="expense/index">Expense Retirement</a></li>
+                </ul>
+                
+                <ul>
+                    <li><a href="regmonitor/index">Regulatory Monitoring</a></li>
+                </ul>
+                <ul>
+                    <li><a href="compliancecorner/acdetails/index">Customer Data Portal</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/Statement">Statement Print</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/ExcelStatements">Excel Statement</a></li>
+                </ul>
+        
+                <!-- Third Row -->
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/CreditPrint">Credit Print</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/OverdraftReport">Overdraft Report</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/InvAdvice">Investment Advice</a></li>
+                </ul>
+        
+                <!-- Fourth Row -->
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/NIPReport">NIP Report</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/TermDeposits">Term Deposits</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/OtherDeposits">Other Deposits</a></li>
+                </ul>
+        
+                <!-- Fifth Row -->
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/WireTransfersReport">Wire Transfer Report</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/igmb/iGMBReport/FinacleReport/Loans">Loans Report</a></li>
+                </ul>
+                <ul>
+                   <li><a href="customercomplaint/index">Complaint Portal</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <button class="openbtn" onclick="openNav()">☰</button>
+
+        <script>
+// Function to open the side panel
+function openNav() {
+    document.querySelector('.sidepanel').classList.add('open');
+}
+
+// Function to close the side panel
+function closeNav() {
+    document.querySelector('.sidepanel').classList.remove('open');
+}
+
+// Event listener to close the side panel when the mouse is outside
+document.addEventListener('mousemove', (e) => {
+    const sidepanel = document.querySelector('.sidepanel');
+    
+    // Check if the mouse is outside the side panel
+    if (!sidepanel.contains(e.target)) {
+        closeNav();
+    }
+});
+        </script>
+
+            <div class="box-container2">
+                <div class="link-box">
+                    <a href="sdmc">NipOutward</a>
+                </div>
+            <div class="link-box">
+                <a href="expense/index">Expense Retirement</a>
+            </div>
+            <div class="link-box">
+                <a href="regmonitor/index">Regulatory Monitoring</a>
+            </div>
+            
+            <div class="link-box">
+                <a href="compliancecorner/acdetails/index">Customer Data Portal</a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/Statement">Statement Print</a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/ExcelStatements">Excel Statement</a>
+            </div>
+    
+          
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/CreditPrint">Credit Print</a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/OverdraftReport">Overdraft Report</a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/InvAdvice">Investment Advice</a>
+            </div>
+    
+       
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/NIPReport">NIP Report</a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/TermDeposits">Term Deposits</a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/OtherDeposits">Other Deposits</a>
+            </div>
+    
+        
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/WireTransfersReport">WireTransfer<br>Report<br></a>
+            </div>
+            <div class="link-box">
+                <a href="/igmb/iGMBReport/FinacleReport/Loans">Loans Report</a>
+            </div>
+            <div class="link-box">
+                <a href="customercomplaint/index">ComplaintPortal</a>
+            </div>
+        </div>
+            </div>
+        </body>
+        </html> 
+        

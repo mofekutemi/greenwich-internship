@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Dark green background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow:0 0 5px rgb(0, 121, 0);
+    width: 40%; 
+    height: 400px; 
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 40px;
+}
+
+.input-container i {
+    position: absolute;
+    right: 3px;
+    bottom: 70;
+    transform: translateY(-150%);
+}
+
+
+.login-form {
+    max-width: 555px;
+    position: relative;
+}
+
+h2 {
+    color: green; /* Black text color */
+    text-align: left;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+
+label {
+    color: #000400;
+}
+
+.input-container .login-container {
+    width: 100%;
+    height: 50px;
+}
+
+/* to Change the color of placeholder text */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #474747;
+}
+
+.activate-user {
+    display: flex;
+    justify-content: flex-left;
+    margin: -15px 0 15px;
+    font-size: 13px;
+}
+
+.activate-user a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.activate-user, .forgot-password {
+    display: inline-block; /* Change the display property to inline-block */
+    margin-right: 450px; /* Add some spacing between the two links */
+    vertical-align: middle;
+}
+
+.activate-user a:hover{
+    text-decoration: underline;
+}
+
+.forgot-password {
+    display: flex;
+    justify-content: flex-end;
+    margin: -30px 0 15px;
+    font-size: 13px;
+}
+
+.forgot-password a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.forgot-password a:hover{
+    text-decoration: underline;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    margin-top: 5px;
+    border: none;
+    color: black;
+    border-radius: 10px;
+    background-color: transparent; /* Set the background color to transparent */
+    outline: none; /* To remove the default focus outline */
+    box-shadow: 0 0 5px rgb(0, 146, 0); /* Add a black shadow when focused */
+    box-shadow: 0 3px 5px rgba(43, 150, 0, 0.6); /* Add shadow to the button */
+}
+
+
+button {
+    width: 107%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color:green;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); /* Add shadow to the button */
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004200; /* Slightly darker green on hover */
+}

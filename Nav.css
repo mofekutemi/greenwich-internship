@@ -1,0 +1,96 @@
+
+.sidepanel  {
+    width: 250px; /* To adjust the width as needed */
+    height: 100%; /* To Adjust the height as needed, 100% for full height */
+    left: -250px; /* Move it off-screen initially */
+    background-color: #11c629;
+    transition: 0.5s;
+    padding-top: 70px;
+    position: absolute;
+    font-size: 36px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidepanel.open {
+    left: 0; /* Bring it back on-screen when opened */
+}
+
+.box-container {
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+  .sidepanel a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: small;
+    color: #ffffff;
+    transition: 0.3s;
+  }
+  
+  .sidepanel a:hover {
+    color: #03530f;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #049557;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    z-index: 2;
+  }
+  
+  .openbtn:hover {
+    background-color:#03840d;
+  }
+
+  .link-box {
+    width: calc((100% - (8 * 2 * 10px)) / 8);
+    height: 100px;
+    background-color: #028d02;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 10px;
+    line-height: 100px;
+    color: white;
+    margin: 20px 10px; 
+    word-wrap: break-word;
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.link-box a {
+  color: white; /* Set the text color for links to white */
+  text-decoration: none; /* Optionally, remove underlines from links */
+}
+
+.link-box:hover {
+  background-color: #016309;
+  color: #03840d; /* Change text color to #03840d (dark green) on hover */
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.box-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #ffffff;
+  margin-left:90px;
+  margin-right: 90px;
+  height: 100%;
+  color: white;
+  justify-content: center; /* Center align boxes horizontally */
+}
